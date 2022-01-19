@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>8BG</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="other.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+       <div class="container header__container">
+          <div class="logo"><img src="/images/kittgang.png" alt="8BG"/></div>
+          <nav class="navigation">
+            <a class="navigation__link" href="/#about">about</a>
+            <a class="navigation__link" href="/#nft">nft</a>
+            <a class="navigation__link" href="/#roadmap">Roadmap</a>
+            <a class="navigation__link" href="/#faq">FAQ</a>
+            <a class="navigation__link" href="/#team">Team</a>
+            <a class="navigation__link" href="https://shop.cryptochicks.app" target="_blank" rel="noreferrer">Merch</a>
+          </nav>
+          <div class="header__connect"><button id ="connect" type="button" class="button button_type_default connect-button connect-button--disconnected">Connect</button></div>
+       </div>
+    </header>
+
+    <main class="layout page-main">
+      <div style="position:fixed;z-index:9999;top:16px;left:16px;right:16px;bottom:16px;pointer-events:none" class="message-container"></div>
+
+      <div class="container preface-main" data-aos="fade-in" data-aos-duration="700">
+         <div class="preface-main__container">
+            <div class="preface-main__content">
+               <h1 class="title preface-main__title preface-main__title--sold-out"><span>Sold Out</span></h1>
+               <p class="text text_color_default preface-main__text">Join the exclusive NFT project featuring the 2nd generation of the Crypto.Chicks!<br/>The collection includes 10k randomly generated gorgeous girls with unique features and attributes.</p>
+               <div class="preface-main__mint">
+                 <button id="mint" class="button button_type_primary">Mint an NFT</button>
+                  <div class="mint-counter">
+                     <div class="mint-counter__circle">
+                        <div data-test-id="CircularProgressbarWithChildren">
+                           <div style="position:relative;width:100%;height:100%">
+                              <svg class="CircularProgressbar mint-counter__circle-progress" viewBox="0 0 100 100" data-test-id="CircularProgressbar">
+                                 <path class="CircularProgressbar-trail" style="stroke-dasharray:289.02652413026095px 289.02652413026095px;stroke-dashoffset:0px" d="
+                                    M 50,50
+                                    m 0,-46
+                                    a 46,46 0 1 1 0,92
+                                    a 46,46 0 1 1 0,-92
+                                    " stroke-width="8" fill-opacity="0"></path>
+                                 <path class="CircularProgressbar-path" style="stroke-dasharray:289.02652413026095px 289.02652413026095px;stroke-dashoffset:0px" d="
+                                    M 50,50
+                                    m 0,-46
+                                    a 46,46 0 1 1 0,92
+                                    a 46,46 0 1 1 0,-92
+                                    " stroke-width="8" fill-opacity="0"></path>
+                              </svg>
+                              <div data-test-id="CircularProgressbarWithChildren__children" style="position:absolute;width:100%;height:100%;margin-top:-100%;display:flex;flex-direction:column;justify-content:center;align-items:center"><img style="width:30px" src="/icons/circle-progress-logo.svg" alt="doge"/></div>
+                           </div>
+                        </div>
+                     </div>
+                     Mint count 10000/10000
+                  </div>
+               </div>
+            </div>
+            <div class="preface-main__image"><img src="/images/prefaceMain/chicks.gif" alt="crypto chicks"/></div>
+           </div>
+         <div class="divider"></div>
+      </div>
+
+      <div class="container about-section" id="about" data-aos="fade-in" data-aos-duration="700">
+       <div class="about-section__content">
+          <h2 class="title about-section__title">About</h2>
+          <div class="about-section__text-wrapper">
+             <p class="text text_color_default about-section__text">The Crypto.Chicks is the 2nd generation of the Crypto.Chick 1/1 which was the first female avatar collection published on Opensea in May 2021. The Crypto.Chicks Collection was created to highlight the importance of women in the crypto space and reflects the individuality and uniqueness of every woman.</p>
+             <p class="text text_color_default about-section__text">The collection is based on the Ethereum blockchain and includes 10k unique gorgeous girls. Every girl has various rare attributes and features, some of them occurring only once!</p>
+          </div>
+          <div class="about-section__links"><a href="http://discord.gg/K3jP92MFk6" rel="noreferrer" target="_blank" class="button button_type_default about-section__links-item"><img src="/icons/discord-primary.svg" alt="discord"/>Join Discord</a><a href="https://opensea.io/collection/the-crypto-chicks" rel="noreferrer" target="_blank" class="button button_type_default about-section__links-item"><img src="/icons/opensea-primary.svg" alt="opensea"/>Opensea</a><a href="https://rarity.tools/the-crypto-chicks" rel="noreferrer" target="_blank" class="button button_type_default about-section__links-item"><img src="/icons/rarity-tools-primary.png" alt="rarity-tools"/>Rarity</a></div>
+       </div>
+       <div class="divider"></div>
+    </div>
+
+    <section class="demo-section" id="nft" data-aos="fade-in" data-aos-duration="700">
+     <div class="container container_size_sm">
+        <h2 class="title demo-section__title">New generation of Crypto.Chicks</h2>
+        <p class="text text_color_default demo-section__text">Crypto.Chicks = 10K gorgeous, proud, independent, and empowered girls</p>
+     </div>
+     <div class="container">
+        <div class="demo-section__slider">
+           <div class="demo-section__arrows"></div>
+           <div class="swiper demo-section__slider">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick1.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick2.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick3.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick4.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick5.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick6.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick7.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick8.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide">
+                    <div class="demo-section__slide">
+                       <div class="demo-section__slide-image"><img src="/images/demoSection/chick9.jpeg" alt="chick"/></div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div class="divider"></div>
+     </div>
+  </section>
+
+  <section class="roadmap" id="roadmap" data-aos="fade-in" data-aos-duration="700">
+   <div class="container container_size_sm roadmap__container">
+      <h2 class="title roadmap__title">Roadmap</h2>
+      <div class="roadmap__milestones">
+         <div class="roadmap__item roadmap__item--completed">
+            <p class="text text_color_default roadmap__item-title">Project launch</p>
+            <p class="text text_color_default roadmap__item-text"><span>The launch takes place in 2 rounds.<br />Round 1 (presale) - Whitelist early access for first 100 OG Chicks holders.<br/>Round 2 - the main sales launch for everyone.</span></p>
+         </div>
+         <div class="roadmap__item roadmap__item--completed">
+            <p class="text text_color_default roadmap__item-title">Special ETH airdrop for the first 100 OG Chicks holders</p>
+            <p class="text text_color_default roadmap__item-text"><span></span></p>
+         </div>
+         <div class="roadmap__item roadmap__item--completed">
+            <p class="text text_color_default roadmap__item-title">Mega giveaway</p>
+            <p class="text text_color_default roadmap__item-text"><span>We will giveaway 10 new gen Chicks</span></p>
+         </div>
+         <div class="roadmap__item roadmap__item--completed">
+            <p class="text text_color_default roadmap__item-title">Support artists</p>
+            <p class="text text_color_default roadmap__item-text"><span>Art contest with a prize fund of $5000</span></p>
+         </div>
+         <div class="roadmap__item roadmap__item--completed">
+            <p class="text text_color_default roadmap__item-title">Exclusive CC Merch</p>
+            <p class="text text_color_default roadmap__item-text"><span>Launching a Branded CC Merch. Part of the profit will be donated to charity.</span></p>
+         </div>
+      </div>
+      <h3 class="title roadmap__milestones-title">Q4 2021 Milestones</h3>
+      <div class="roadmap__milestones">
+         <div class="roadmap__item roadmap__item--completed">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Community Voting System:</span><span class="text text_color_default roadmap__item-text"><span>an off-chain voting system that accounts for the number of Chicks held by the connected wallet.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Charity Donation:</span><span class="text text_color_default roadmap__item-text"><span>a donation of 5 ETH to women’s rights or women’s empowerment organizations. Nominations by the community and community will vote to select which charity we donate to.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Women NFT Artist Spotlight Series:</span><span class="text text_color_default roadmap__item-text"><span>a monthly blog that will feature women NFT artists from around the world with interviews about their stories and their work. There will be benefits for CC community members included, like whitelist access, giveaways, etc.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Community Event Series:</span><span class="text text_color_default roadmap__item-text"><span>a regular series of fun or educational community events with chances to win prizes and other fun giveaways.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Personalized Merch:</span><span class="text text_color_default roadmap__item-text"><span>an upgraded version of our merch store that will allow you to get merch with your own Chick personalized on it.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">NFTs 101 Series:</span><span class="text text_color_default roadmap__item-text"><span>an educational training series to help new entrants to crypto and NFTs understand how to get started and navigate the world of NFTs.</span></span>
+         </div>
+      </div>
+      <h3 class="title roadmap__milestones-title">Q1 2022 Milestones</h3>
+      <div class="roadmap__milestones">
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Staking:</span><span class="text text_color_default roadmap__item-text"><span>more details to come, there will be votes using the new community voting system.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Digital Wearables:</span><span class="text text_color_default roadmap__item-text"><span>digital wearables for the Chicks in the metaverse.</span></span>
+         </div>
+      </div>
+      <h3 class="title roadmap__milestones-title">Strategic Objectives</h3>
+      <div class="roadmap__milestones">
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Corporate Partnerships:</span><span class="text text_color_default roadmap__item-text"><span>We aim to bridge the gap between the NFT world and major companies by collaborating with major retail, fashion, cosmetic, and toy brands. We have major conversations underway, which we are excited to share with all of you when we’re able to.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Partnerships with other Women-Oriented Projects:</span><span class="text text_color_default roadmap__item-text"><span>We want to dispel the belief that there are limited seats for women-oriented projects at the table and show we can be stronger together with collaborations and partnerships.</span></span>
+         </div>
+         <div class="roadmap__item">
+            <div></div>
+            <span class="text text_color_default roadmap__item-title">Offline events and meetups:</span><span class="text text_color_default roadmap__item-text"><span>We want to build Crypto Chicks into a strong global network, and will facilitate this by hosting global meetups and events to bring the community together.</span></span>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="divider"></div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq" data-aos="fade-in" data-aos-duration="700">
+   <div class="container container_size_sm">
+      <h2 class="title faq-section__title">FAQ</h2>
+      <ul class="faq-section__list">
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">What is Crypto.Chicks?</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="accordion">
+               <span class="text text_color_default faq-section__question">Are there two collections of Crypto.Chicks?</span>
+               <div class="faq-section__answer">
+                 <span class="text text_color_default">
+                   <p>Crypto.Chicks = the new generation of 10K randomly generated gorgeous, proud, independent, and empowered girls</p>
+                   <p>The Crypto.Chicks highlights the importance of women in the crypto space. The collection reflects the individuality and uniqueness of every woman</p>
+                 </span>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">Will there be a whitelist?</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">How can I buy a chick?</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">How much does a Chick cost to mint?</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">Is there a limit to the number of Chicks I can mint</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">How many unique CCH are there in total?</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+         <li class="faq-section__item">
+            <div class="faq-section__item-wrapper">
+               <span class="text text_color_default faq-section__question">How many tokens does the CC team withhold from sale?</span>
+               <div class="faq-section__expand">
+                  <div></div>
+                  <div></div>
+               </div>
+            </div>
+         </li>
+      </ul>
+   </div>
+   <div class="container">
+      <div class="divider"></div>
+   </div>
+</section>
+
+<footer class="footer">
+   <div class="footer__logo"><img src="/icons/logoFooter.svg" alt="cch"/></div>
+   <div class="footer__wrapper">
+      <div class="container footer__container">
+         <p class="text text_color_default text_size_sm footer__copyright">©2021 Crypto.Chicks</p>
+         <nav class="navigation"><a class="navigation__link" href="/#about">about</a><a class="navigation__link" href="/#nft">nft</a><a class="navigation__link" href="/#roadmap">Roadmap</a><a class="navigation__link" href="/#faq">FAQ</a><a class="navigation__link" href="/#team">Team</a><a class="navigation__link" href="https://shop.cryptochicks.app" target="_blank" rel="noreferrer">Merch</a></nav>
+         <div class="footer__social">
+            <a class="footer__social-link" href="https://twitter.com/Crypto__Chicks" target="_blank" rel="noreferrer">
+               <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clipTwitter)">
+                     <path d="M5.66262 16.3126C12.4534 16.3126 16.1687 10.6851 16.1687 5.80646C16.1687 5.64825 16.1652 5.48654 16.1582 5.32833C16.8809 4.80566 17.5046 4.15825 18 3.41653C17.3269 3.71601 16.6122 3.9116 15.8804 3.99661C16.651 3.53474 17.2279 2.80917 17.5043 1.95439C16.7794 2.38398 15.9867 2.68702 15.1601 2.85052C14.6031 2.25873 13.8667 1.8669 13.0648 1.7356C12.2628 1.6043 11.4399 1.74085 10.7233 2.12413C10.0067 2.50742 9.43635 3.11609 9.10039 3.85605C8.76442 4.596 8.68157 5.42602 8.86465 6.21779C7.39687 6.14413 5.96095 5.76284 4.64999 5.09864C3.33902 4.43443 2.18227 3.50214 1.25473 2.3622C0.7833 3.17499 0.639042 4.1368 0.851273 5.05213C1.0635 5.96746 1.6163 6.76765 2.3973 7.29005C1.81097 7.27144 1.23748 7.11357 0.724219 6.8295V6.87521C0.723693 7.72817 1.01857 8.555 1.55873 9.21514C2.09889 9.87528 2.85099 10.328 3.68719 10.4963C3.14404 10.6449 2.57399 10.6666 2.02113 10.5596C2.25709 11.2931 2.71618 11.9347 3.33433 12.3948C3.95248 12.8549 4.69884 13.1105 5.46926 13.126C4.16132 14.1534 2.54563 14.7107 0.882422 14.708C0.587465 14.7076 0.292799 14.6895 0 14.6539C1.68964 15.7379 3.65515 16.3136 5.66262 16.3126Z" fill="white"></path>
+                  </g>
+                  <defs>
+                     <clipPath id="clipTwitter">
+                        <rect width="18" height="18" fill="white"></rect>
+                     </clipPath>
+                  </defs>
+               </svg>
+            </a>
+            <a class="footer__social-link" href="http://discord.gg/K3jP92MFk6" target="_blank" rel="noreferrer">
+               <svg class="icon" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.2601 1.32388C14.0866 0.787192 12.8404 0.396046 11.5396 0.177734C11.3759 0.459724 11.194 0.841767 11.0666 1.14195C9.68307 0.941827 8.30951 0.941827 6.94504 1.14195C6.81769 0.841767 6.62666 0.459724 6.47201 0.177734C5.16216 0.396046 3.91595 0.787192 2.7507 1.32388C0.394744 4.79869 -0.242005 8.19163 0.0763687 11.5391C1.64094 12.6761 3.15096 13.3675 4.63458 13.8223C4.99844 13.3311 5.32591 12.8035 5.6079 12.2486C5.07121 12.0485 4.56181 11.8029 4.07061 11.5118C4.19796 11.4209 4.32531 11.3208 4.44356 11.2208C7.40898 12.5761 10.6209 12.5761 13.5499 11.2208C13.6773 11.3208 13.7955 11.4209 13.9229 11.5118C13.4317 11.8029 12.9223 12.0485 12.3856 12.2486C12.6676 12.8035 12.9951 13.3311 13.3589 13.8223C14.8416 13.3675 16.3607 12.6761 17.9171 11.5391C18.3082 7.66407 17.2976 4.29842 15.2601 1.32388ZM6.01723 9.47422C5.12577 9.47422 4.39806 8.66466 4.39806 7.67317C4.39806 6.68167 5.10758 5.87205 6.01723 5.87205C6.91775 5.87205 7.65454 6.68167 7.63634 7.67317C7.63634 8.66466 6.91775 9.47422 6.01723 9.47422ZM11.9945 9.47422C11.103 9.47422 10.3744 8.66466 10.3744 7.67317C10.3744 6.68167 11.0848 5.87205 11.9945 5.87205C12.895 5.87205 13.6318 6.68167 13.6136 7.67317C13.6136 8.66466 12.9041 9.47422 11.9945 9.47422Z" fill="white"></path>
+               </svg>
+            </a>
+            <a class="footer__social-link" href="https://rarity.tools/the-crypto-chicks" target="_blank" rel="noreferrer"><img class="icon" src="/icons/rarity-tools.png" alt="rarity-tools"/></a>
+            <a class="footer__social-link" href="https://opensea.io/collection/the-crypto-chicks" target="_blank" rel="noreferrer">
+               <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clipOpensea)">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M18.448 12.6557V11.7137C18.4484 11.6936 18.4442 11.6737 18.4357 11.6555C18.4272 11.6373 18.4147 11.6213 18.399 11.6088C18.3834 11.5962 18.365 11.5874 18.3454 11.583C18.3258 11.5787 18.3055 11.5789 18.286 11.5837L13.839 12.8687C13.815 12.8749 13.7934 12.8881 13.777 12.9067C13.4634 13.2526 13.1295 13.5795 12.777 13.8857C12.5043 14.1192 12.1571 14.2476 11.798 14.2477H10.188V12.6177H11.464C11.4967 12.6178 11.5283 12.6061 11.553 12.5847L11.718 12.4327C11.788 12.3687 11.873 12.2897 11.973 12.1897C11.9919 12.1698 12.0113 12.149 12.031 12.1278C12.074 12.0816 12.1188 12.0335 12.164 11.9897C12.23 11.9257 12.295 11.8537 12.355 11.7827C12.455 11.6747 12.555 11.5627 12.655 11.4437C12.7264 11.3625 12.7932 11.2774 12.855 11.1887C12.927 11.1047 12.998 11.0097 13.064 10.9197C13.0854 10.8885 13.109 10.8559 13.1328 10.823C13.1624 10.782 13.1924 10.7406 13.219 10.7007C13.267 10.6287 13.315 10.5517 13.356 10.4797C13.4804 10.2846 13.5884 10.0795 13.679 9.86666C13.7174 9.785 13.7484 9.69734 13.7781 9.61347C13.7848 9.59464 13.7914 9.576 13.798 9.55766C13.8339 9.45486 13.8636 9.35001 13.887 9.24366C13.9398 8.99768 13.9539 8.74499 13.929 8.49466C13.9253 8.41829 13.9153 8.34236 13.899 8.26766V8.25566C13.8922 8.20104 13.8805 8.14715 13.864 8.09466C13.8068 7.8454 13.7247 7.60252 13.619 7.36966C13.583 7.28166 13.541 7.19166 13.5 7.10866C13.404 6.92966 13.303 6.75166 13.189 6.57866C13.1632 6.53525 13.1346 6.49302 13.1065 6.45149C13.09 6.42701 13.0736 6.40276 13.058 6.37866C12.9905 6.27067 12.9104 6.16583 12.8327 6.06415C12.8126 6.03778 12.7926 6.01161 12.773 5.98566C12.7173 5.913 12.6551 5.83855 12.5937 5.76507C12.5757 5.74349 12.5577 5.722 12.54 5.70066C12.462 5.60666 12.385 5.51666 12.307 5.42766C12.028 5.11266 11.735 4.82666 11.474 4.58366C11.426 4.53566 11.373 4.48766 11.319 4.44066C11.116 4.25566 10.932 4.09566 10.777 3.97066C10.7374 3.93899 10.7006 3.9076 10.6659 3.87795C10.6348 3.85144 10.6053 3.82632 10.577 3.80366L10.398 3.66866C10.3862 3.65994 10.373 3.65319 10.359 3.64866L10.188 3.60066V2.18266C10.188 1.96183 10.1011 1.74987 9.946 1.59266C9.86993 1.51492 9.77907 1.45319 9.67877 1.41111C9.57847 1.36904 9.47077 1.34746 9.362 1.34766C9.14222 1.34739 8.9313 1.43431 8.77551 1.58934C8.61973 1.74438 8.5318 1.95487 8.531 2.17466V3.12966L8.445 3.10566L8.212 3.03966L8 2.98066H7.994L6.387 2.54566C6.37107 2.54142 6.35425 2.54197 6.33862 2.54723C6.323 2.55248 6.30927 2.56222 6.29914 2.57523C6.28901 2.58824 6.28294 2.60393 6.28167 2.62037C6.2804 2.6368 6.28399 2.65325 6.292 2.66766L6.549 3.14266C6.56324 3.17825 6.58135 3.21384 6.59999 3.25048C6.61277 3.2756 6.6258 3.30121 6.638 3.32766C6.68 3.41166 6.727 3.51066 6.763 3.58866C6.799 3.66666 6.835 3.74366 6.877 3.82766C6.8984 3.87593 6.92034 3.92488 6.94267 3.97469C7.0059 4.11578 7.07223 4.26376 7.138 4.42266L7.1453 4.44005C7.20286 4.57719 7.26015 4.7137 7.311 4.85666C7.456 5.23066 7.592 5.62966 7.711 6.03966C7.74083 6.13267 7.7646 6.22216 7.78876 6.31313C7.79863 6.35028 7.80857 6.38767 7.819 6.42566L7.836 6.49766C7.884 6.68866 7.926 6.87766 7.956 7.06866C7.98 7.19866 8.003 7.32366 8.015 7.44966C8.02945 7.56446 8.04004 7.68507 8.04986 7.79699C8.05227 7.82447 8.05464 7.85143 8.057 7.87766C8.069 8.01066 8.075 8.14666 8.075 8.27766C8.07826 8.59976 8.0447 8.92117 7.975 9.23566C7.97012 9.25358 7.96523 9.27179 7.96029 9.29019C7.94098 9.36214 7.92089 9.43699 7.897 9.50866C7.87404 9.58978 7.84406 9.67148 7.81287 9.75646C7.80331 9.78253 7.79363 9.8089 7.784 9.83566C7.76 9.90466 7.736 9.97066 7.706 10.0357C7.55313 10.3951 7.37813 10.7448 7.182 11.0827C6.903 11.5767 6.625 12.0107 6.425 12.2897C6.41542 12.3039 6.40609 12.3175 6.39702 12.3309C6.38051 12.3551 6.36484 12.3781 6.35 12.4007C6.33626 12.4206 6.32818 12.4439 6.32663 12.4681C6.32507 12.4923 6.33011 12.5164 6.34119 12.538C6.35227 12.5595 6.36898 12.5776 6.38955 12.5904C6.41012 12.6032 6.43378 12.6102 6.458 12.6107H8.535V14.2517H6.435C6.15627 14.2518 5.88306 14.1739 5.64626 14.0269C5.40946 13.8799 5.21851 13.6695 5.095 13.4197C4.9661 13.1686 4.91327 12.8853 4.943 12.6047C4.94522 12.5849 4.94334 12.5649 4.93749 12.5459C4.93164 12.5269 4.92194 12.5093 4.909 12.4942C4.89605 12.4791 4.88014 12.4668 4.86225 12.4581C4.84436 12.4494 4.82487 12.4445 4.805 12.4437H0.558004C0.52326 12.4437 0.489939 12.4575 0.465371 12.482C0.440804 12.5066 0.427002 12.5399 0.427002 12.5747V12.6617C0.42647 13.9595 0.940837 15.2045 1.85723 16.1235C2.77362 17.0426 4.01718 17.5605 5.315 17.5637H12.933C14.361 17.5637 15.1719 16.2622 15.9688 14.9832C16.191 14.6267 16.412 14.272 16.645 13.9477C17.124 13.4337 17.7126 13.0342 18.367 12.7787C18.391 12.7682 18.4114 12.751 18.4258 12.7292C18.4401 12.7073 18.4479 12.6818 18.448 12.6557ZM1.56202 10.5087L1.49902 10.6087C1.48524 10.6286 1.47727 10.6519 1.47601 10.6761C1.47475 10.7002 1.48024 10.7242 1.49188 10.7454C1.50351 10.7666 1.52082 10.7841 1.54187 10.796C1.56292 10.8079 1.58686 10.8137 1.61102 10.8127H5.52102C5.54233 10.8129 5.56335 10.8078 5.58219 10.7978C5.60104 10.7879 5.61713 10.7734 5.62902 10.7557C5.68002 10.6777 5.72802 10.5967 5.77202 10.5137C6.09255 10.0043 6.34313 9.45401 6.51702 8.87775C6.77302 7.77175 6.22502 6.00175 5.59002 4.57775C5.58043 4.55638 5.56524 4.538 5.54607 4.52455C5.52689 4.5111 5.50444 4.50308 5.48108 4.50134C5.45773 4.49959 5.43433 4.5042 5.41337 4.51465C5.39242 4.52511 5.37467 4.54104 5.36202 4.56075L1.56202 10.5087Z" fill="white"></path>
+                  </g>
+                  <defs>
+                     <clipPath id="clipOpensea">
+                        <rect width="18" height="18" fill="white"></rect>
+                     </clipPath>
+                  </defs>
+               </svg>
+            </a>
+            <a class="footer__social-link" href="https://www.instagram.com/crypto__chicks/" target="_blank" rel="noreferrer">
+               <svg class="icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2H8C6.56687 2 5.6123 2.00156 4.87887 2.06148C4.1688 2.11949 3.84387 2.2221 3.63803 2.32698C3.07354 2.6146 2.6146 3.07354 2.32698 3.63803C2.2221 3.84387 2.11949 4.1688 2.06148 4.87887C2.00156 5.6123 2 6.56687 2 8V10C2 11.4331 2.00156 12.3877 2.06148 13.1211C2.11949 13.8312 2.2221 14.1561 2.32698 14.362C2.6146 14.9265 3.07354 15.3854 3.63803 15.673C3.84387 15.7779 4.1688 15.8805 4.87887 15.9385C5.6123 15.9984 6.56687 16 8 16H10C11.4331 16 12.3877 15.9984 13.1211 15.9385C13.8312 15.8805 14.1561 15.7779 14.362 15.673C14.9265 15.3854 15.3854 14.9265 15.673 14.362C15.7779 14.1561 15.8805 13.8312 15.9385 13.1211C15.9984 12.3877 16 11.4331 16 10V8C16 6.56687 15.9984 5.6123 15.9385 4.87887C15.8805 4.1688 15.7779 3.84387 15.673 3.63803C15.3854 3.07354 14.9265 2.6146 14.362 2.32698C14.1561 2.2221 13.8312 2.11949 13.1211 2.06148C12.3877 2.00156 11.4331 2 10 2ZM0.544967 2.73005C0 3.79961 0 5.19974 0 8V10C0 12.8003 0 14.2004 0.544967 15.27C1.02433 16.2108 1.78924 16.9757 2.73005 17.455C3.79961 18 5.19974 18 8 18H10C12.8003 18 14.2004 18 15.27 17.455C16.2108 16.9757 16.9757 16.2108 17.455 15.27C18 14.2004 18 12.8003 18 10V8C18 5.19974 18 3.79961 17.455 2.73005C16.9757 1.78924 16.2108 1.02433 15.27 0.544967C14.2004 0 12.8003 0 10 0H8C5.19974 0 3.79961 0 2.73005 0.544967C1.78924 1.02433 1.02433 1.78924 0.544967 2.73005ZM9 11C10.1046 11 11 10.1046 11 9C11 7.89543 10.1046 7 9 7C7.89543 7 7 7.89543 7 9C7 10.1046 7.89543 11 9 11ZM9 13C11.2091 13 13 11.2091 13 9C13 6.79086 11.2091 5 9 5C6.79086 5 5 6.79086 5 9C5 11.2091 6.79086 13 9 13ZM14 6C14.5523 6 15 5.55228 15 5C15 4.44772 14.5523 4 14 4C13.4477 4 13 4.44772 13 5C13 5.55228 13.4477 6 14 6Z" fill="white"></path>
+               </svg>
+            </a>
+            <a class="footer__social-link" href="https://www.tiktok.com/@cryptochicks.app" target="_blank" rel="noreferrer">
+               <svg class="icon" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.39829 0.0151875C9.37986 0 10.3558 0.009 11.3306 0C11.3897 1.14806 11.8025 2.3175 12.6429 3.12919C13.4816 3.96113 14.6679 4.34194 15.8222 4.47075V7.49081C14.7405 7.45538 13.6537 7.23037 12.6722 6.76463C12.2447 6.57113 11.8464 6.32194 11.4566 6.06713C11.4515 8.25863 11.4656 10.4473 11.4425 12.6298C11.384 13.6783 11.0381 14.7218 10.4284 15.5858C9.44736 17.0241 7.74467 17.9618 5.99586 17.991C4.92317 18.0523 3.85161 17.7598 2.93754 17.2209C1.42273 16.3277 0.356793 14.6925 0.201543 12.9375C0.183543 12.5623 0.177356 12.1877 0.192543 11.8215C0.327543 10.3944 1.03348 9.02925 2.12923 8.10056C3.37123 7.01888 5.11104 6.50362 6.74004 6.8085C6.75523 7.91944 6.71079 9.02925 6.71079 10.1402C5.96661 9.89944 5.09698 9.96694 4.44673 10.4186C3.97198 10.7263 3.61142 11.1977 3.42354 11.7309C3.26829 12.1112 3.31273 12.5336 3.32173 12.9375C3.50004 14.1683 4.68354 15.2027 5.94692 15.0907C6.78448 15.0817 7.58717 14.5957 8.02367 13.8842C8.16485 13.635 8.32292 13.3802 8.33136 13.0871C8.40504 11.7456 8.37579 10.4096 8.38479 9.06806C8.39098 6.04463 8.37579 3.02962 8.39885 0.01575L8.39829 0.0151875Z" fill="white"></path>
+               </svg>
+            </a>
+         </div>
+      </div>
+   </div>
+</footer>
+
+    </main>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
